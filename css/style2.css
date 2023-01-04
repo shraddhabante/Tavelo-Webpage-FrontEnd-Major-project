@@ -1,0 +1,204 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+
+.about-head {
+    padding-top: 170px;
+}
+
+.about-bg-img {
+    background-image: url('../image/beautiful_tropical_resort_pool-wallpaper-1366x768.jpg');
+    background-size: cover;
+    height: 400px;
+   
+}
+
+.about-bg-rel {
+    position: relative;
+    background-image: url('../image/about-bg-1.png');
+    background-size: cover;
+    height: 700px;
+}
+
+.about-img1 {
+    position: absolute;
+    width: 50%;
+    top: 30px;
+    bottom: 0;
+    right: 0;
+    left: 140px;
+    z-index: 2;
+}
+
+.about-img2 {
+    position: absolute;
+    width: 50%;
+    top: 150px;
+    bottom: 0;
+    right: 0;
+    left: 368px;
+    z-index: 1;
+}
+
+.about-para p {
+    padding-right: 200px;
+    padding-left: 30px;
+}
+
+.about-paragraph {
+    font-size: 17.5px;
+}
+
+.about-bg-img2 {
+    background-image: url('../image/bg-2-about.png');
+    height: 500px;
+    background-position: cover;
+}
+
+.team-img {
+    position: relative;
+    height: 400px;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+.about-team {
+    height: 450px;
+    margin-bottom: 20px;
+}
+
+.team-info {
+    position: absolute;
+    height: 80px;
+    width: 91.5%;
+    top: 79.9%;
+    left: 20px;
+    color: white;
+    background: #222222;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.team-info>p {
+    font-size: small;
+}
+
+.team-row {
+    width: 99.9%;
+    margin-top: 30px;
+    padding-left: 50px;
+}
+
+.circle .hr-line{
+    border: none;
+    border-bottom: 1px solid black;
+    margin-bottom: 8px;
+    
+}
+.footer-row {
+    background-color: #D6E4E5;
+    border-radius: 10px;
+}
+
+.footer-row p,
+a {
+    font-size: 18px;
+    /* font-weight: 40; */
+}
+
+.icon-footer {
+    width: 34px;
+    height: 34px;
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+    margin-left: 5px;
+}
+
+@media screen and (max-width:400px) {
+    .about-bg-img {
+        height: auto;
+    }
+
+    .about-head {
+        padding-top: 50px;
+    }
+
+    .about-text {
+        padding-bottom: 20px;
+    }
+
+    .about-bg-rel {
+        width: 50%;
+        height: 300px;
+        background-size: cover;
+        margin-bottom: 50px;
+        margin-right: 0;
+    }
+
+    .about-img1 {
+        width: 90%;
+        height: 200px;
+        top: 50px;
+        bottom: 0;
+        right: 0;
+        left: 20px;
+    }
+
+    .about-img2 {
+        width: 90%;
+        top: 150px;
+        bottom: 0;
+        right: 0;
+        left: 160px;
+    }
+
+    .about-para p {
+        padding: 0;
+        /* width: 100%; */
+        font-size: 18px;
+    }
+
+    .about-paragraph {
+        font-size: 14px;
+    }
+    .about-bg-img2{
+        height: auto
+    }
+    .team-row {
+        width:100%;
+        height: auto;
+        margin-top: 30px;
+        padding-left: 50px;
+    }
+    .steps1{
+        display: flex;
+        flex-direction: row;
+        text-align: start;
+    }
+    .steps1 > .circle{
+        margin-left: 30px;
+    }
+    .step-img{
+        margin-left: 30px;
+    }
+    .hr-line{
+        border-left: 1px solid black;
+        border-bottom: none;
+        height: 250px;
+        margin-left: 30px;
+        margin-bottom: -2px;
+    }
+    .step-text{
+        margin-left: 30px;
+    }
+    .circle{
+        width: 30px;
+    }
+}
