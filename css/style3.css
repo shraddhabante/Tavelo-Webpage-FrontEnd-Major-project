@@ -59,6 +59,11 @@ input {
     padding: 8px;
 }
 
+.msg-form {
+    width: 90%;
+    height: 120px;
+}
+
 .journey-list {
     list-style-type: none;
 }
@@ -86,7 +91,13 @@ a {
     color: white;
     margin-left: 5px;
 }
+.footer-nav {
+    margin-left: 50px;
+}
 
+.footer-icon {
+    text-align: end;
+}
 
 @media screen and (max-width :400px) {
     .back-img {
@@ -129,11 +140,47 @@ a {
     input {
         width: 100%;
     }
-    .journey-head{
+
+    .msg-form {
+        width: 100%;
+        height: auto;
+    }
+
+    .journey-head {
         margin-bottom: 0;
     }
+
     .journey-p {
         font-size: 16px;
     }
-    
+
+    .footer-row {
+        width: auto;
+        flex-direction: column;
+    }
+
+    .footer-link {
+        order: 1;
+    }
+
+    footer-text {
+        font-size: 10px;
+        order: 3;
+    }
+
+    .footer-nav {
+        margin-left: 5px;
+    }
+
+    .icon-footer {
+        width: 25px;
+        height: 25px;
+        padding: 5px;
+    }
+
+    .footer-icon {
+        text-align: center;
+        order: 2;
+    }
+
 }
