@@ -10,21 +10,20 @@ body {
 
 .home-bg-img {
     height: 450px;
+    width: 100%;
+    /* position: relative; */
     background-image: url('../image/background.png');
     background-position: center;
     background-size: 100% 100%;
+    border-radius: 10px;
 }
 
-.travel-head {
-    padding-top: 100px;
-    padding-bottom: 10px;
+.home-text{
+    height: 500px;
+    width: 700px;
+    padding-top: 130px;
+    /* margin-top: 130px; */
 }
-
-.travel-text {
-    padding-left: 230px;
-    padding-right: 230px;
-}
-
 .card-div {
     /* margin-top: -100px; */
     box-shadow: 0 0 5px;
@@ -53,14 +52,34 @@ body {
     color: midnightblue;
 }
 
-
-.head-blog1 {
-    padding: 130px;
+.blog-left-bg{
+    background-image: url(../image/blog1.png);
+    background-position: center;
+    background-size: 100% 100%;
+    height: 500px;
+    position: relative;
+    border-radius: 10px;
+}
+.blog-right-bg1{
+    background-image: url(../image/blog2.png);
+    background-position: center;
+    background-size: 100% 100%;
+    height: 250px;
+    position: relative;
+    border-radius: 10px;
+}
+.blog-right-bg2{
+    background-image: url(../image/blog3.png);
+    background-position: center;
+    background-size: 100% 100%;
+    height: 250px;
+    position: relative;
+    border-radius: 10px;
 }
 
 .style-relative {
     position: relative;
-    background-image: url('../image/wp3108661.jpg');
+    background-image: url(../image/wp3108661.jpg);
     background-position: center;
     background-size: 100% 100%;
     /* width: 100%; */
@@ -98,10 +117,6 @@ body {
     border-radius: 10px;
 }
 
-.footer-row p,
-a {
-    font-size: 18px;
-}
 
 .icon-footer {
     width: 34px;
@@ -112,170 +127,169 @@ a {
     margin-left: 5px;
 }
 
-.footer-nav {
-    margin-left: 50px;
-}
-
-.footer-icon {
-    text-align: end;
-}
-
-@media screen and (max-width :400px) {
-    .home-bg-img {
+@media screen and (max-width :400px){
+    .home-bg-img{
+        /* width: 0%; */
         height: auto;
+        margin: 0px 0px;
     }
-
-    .travel-head {
-        padding-top: 30px;
-        font-size: 18px;
-    }
-
-    .travel-text {
-        padding-left: 0;
-        padding-right: 0;
-        font-size: 10px;
-        padding-bottom: 50px;
-    }
-    .card-div {
-        margin-bottom: 70px;
-    }
-
-    .hr-text {
-        text-align: center;
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-
-    .div1 {
-        flex-direction: column;
-    }
-
-    .dest-div {
-        width: 345px;
-    }
-
-    blog-img {
-        width: 100%;
-        height: 200px;
-    }
-
-    .head-blog1 {
-        padding: 80px;
-        font-size: 20px;
-    }
-
-    .style-absolute {
+    .home-text{
         height: auto;
-    }
-
-    .cust-para {
-        font-size: 14px;
-        padding-top: 30px;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    .cust-img {
-        margin-left: 0px;
-    }
-
-    .icon-abs {
-        padding-top: 0;
-        padding-left: 0;
-
-    }
-
-    .footer-row {
         width: auto;
-        flex-direction: column;
+        padding-top: 30px;
+        font-size: 5px;
     }
-    .footer-link{
-        order: 1;
+    .card-div{
+        margin-bottom: 80px;
     }
-    footer-text {
-        font-size: 10px;
+    .blog-right-bg1{
+        margin-top: 20px;
+    }
+
+    .cust-para{
+        font-size: 15px;
+    }
+    .footer-text{
+        text-align: center;
+        font-size: 14px;
         order: 3;
     }
-
-    .footer-nav {
-        margin-left: 5px;
-    }
-
-    .icon-footer {
-        width: 25px;
-        height: 25px;
-        padding: 5px;
-    }
-
-    .footer-icon {
+    .footer-icon{
         text-align: center;
-        order: 2;
+        padding: 10px;
     }
 }
 
-/* @media screen and (min-width :400px) {
-    .home-bg-img {
-        height: 200px;
-
+@media screen and (min-width: 400px){
+    .home-bg-img{
+        /* width: 0%; */
+        height: auto;
+        margin: 0px 0px;
     }
-
-    .travel-head {
+    .home-text{
+        height: auto;
+        width: auto;
         padding-top: 30px;
-        font-size: 22px;
+        font-size: 5px;
     }
+    .card-div{
+        margin-bottom: 80px;
+    }
+    /* .blog-right-bg1{
+        margin-top: 20px;
+    } */
 
-    .travel-text {
-        padding-left: 15px;
-        padding-right: 15px;
-        font-size: 12px;
+    .cust-para{
+        font-size: 15px;
+    }
+    .footer-text{
+        text-align: center;
+        font-size: 14px;
+        order: 3;
+    }
+    .footer-icon{
+        text-align: center;
+        padding: 10px;
+    }
+}
+
+@media screen and (min-width: 600px){
+    .home-bg-img{
+        /* width: 0%; */
+        height: auto;
+        margin: 0px 0px;
+    }
+    .home-text{
+        height: auto;
+        width: auto;
+        padding-top: 30px;
+        font-size: 5px;
+    }
+    .card-div{
+        margin-bottom: 80px;
+    }
+    /* .blog-right-bg1{
+        margin-top: 20px;
+    } */
+
+    .cust-para{
+        font-size: 15px;
+    }
+    .footer-text{
+        text-align: center;
+        font-size: 14px;
+        order: 3;
+    }
+    .footer-icon{
+        text-align: center;
+        padding: 10px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .home-text{
+        height: 500px;
+        width: 700px;
+        padding-top: 130px;
+    }
+    .card-div{
+        margin-bottom: 80px;
+    }
+    .cust-para{
+        font-size: 15px;
+    }
+    .footer-div{
+        padding-top: 50px;
         padding-bottom: 50px;
     }
-
-    .card-div {
-        margin-bottom: 70px;
+    .footer-text{
+        text-align: start;
+        font-size: 14px;
+        order: 0;
     }
-} */
-
-
-
-/* @media (min-width: 768px) {
-    .home-bg-img {
-        height: 400px;
+    .footer-icon{
+        text-align: center;
     }
+}
 
-    .travel-head {
-        padding-top: 90px;
-        padding-bottom: 10px;
+@media screen and (min-width: 1024px){
+    .card-div{
+        margin-bottom: 80px;
     }
-
-    .travel-text {
-        padding-left: 80px;
-        padding-right: 80px;
+    /* .dest-text{
+        width: 900px;
+    } */
+    .footer-div{
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
-
-} */
-
-/* @media (min-width :1024px) {
-    .home-bg-img {
-        height: 450px;
+    .footer-icon{
+        text-align: center;
     }
-
-    .travel-head {
-        padding-top: 100px;
-        padding-bottom: 10px;
+    .footer-text{
+        text-align: start;
+        font-size: 14px;
+        order: 0;
     }
-
-    .travel-text {
-        padding-left: 230px;
-        padding-right: 230px;
-        font-size: 16px;
+}
+@media screen and (min-width: 1280px){
+    .card-div{
+        margin-bottom: 0px;
     }
-    .home-card{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-} */
-/* @media (min-width:1284px) {
     
-} */
+    .cust-para{
+        font-size: 15px;
+    }
+    .footer-div{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .footer-icon{
+        text-align: center;
+    }
+    .footer-text{
+        text-align: start;
+        font-size: 14px;
+        order: 0;
+    }
+}

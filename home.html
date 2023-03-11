@@ -15,8 +15,8 @@
 <body>
     <header>
         <!-- home -->
-        <nav class="navbar navbar-expand-sm bg-light">
-            <div class="container">
+        <nav class="navbar navbar-expand-lg bg-light container">
+            <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <img src="./image/travelo-logo.jpg" style="width: 50px;" class="rounded-pill"><span
                         style="color: dodgerblue;" class="fw-bold">Travelo</span></a>
@@ -24,17 +24,17 @@
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                    <ul class="navbar-nav">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto me-auto">
                         <li class="nav-item">
                             <a class="nav-link active ps-5 fs-5" style="color: midnightblue;" aria-current="page"
-                                href="#">Home</a>
+                                href="./home.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fs-5 ps-5" style="color: cadetblue;" href="about.html">About</a>
+                            <a class="nav-link fs-5 ps-5" style="color: cadetblue;" href="./about.html">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fs-5 ps-5" style="color: cadetblue;" href="contact.html">Contact</a>
+                            <a class="nav-link fs-5 ps-5" style="color: cadetblue;" href="./contact.html">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -42,11 +42,11 @@
         </nav>
     </header>
     <main>
-        <section>
+         <section>
             <div class="container home-bg-img">
-                <div class="text-center text-white">
-                    <h1 class="fw-bolder travel-head">TRAVEL TO EXPLORE</h1>
-                    <p class="lh-3 travel-text">Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Sed Do
+                <div class="text-center text-white mx-auto fs-5 home-text">
+                    <h1 class="fw-bolder">TRAVEL TO EXPLORE</h1>
+                    <p class="lh-3">Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Sed Do
                         Eiusmod Tempor
                         Incididunt Ut Labore Et Dolore Magna Aliqua. Ultricies Mi Eget Mauris Pharetra. Amet
                         Risus Nullam Eget Felis Eget Nunc Lobortis. Purus In Massa Tempor Nec. Porta Nibh
@@ -54,14 +54,13 @@
                         Vulputate Dignissim Suspendisse In.
                     </p>
                 </div>
-
             </div>
         </section>
 
         <section>
             <div class="container mb-5">
-                <div class="row justify-content-around text-center home-card">
-                    <div class="card-div pt-5 pb-5 col-sm-12 col-md-3 col-lg-3"
+                <div class="d-flex row justify-content-evenly text-center home-card">
+                    <div class="card-div pt-5 pb-5 col-sm-12 col-md-6 col-lg-3"
                         style="width: 18rem; margin-top: -50px; background-color: white;">
                         <div class="card-body text-center px-4">
                             <div class="icon-div"><i class="fa-solid fa-award fa-4x center mb-3"></i></div>
@@ -72,7 +71,7 @@
                                 amazing rewards</p>
                         </div>
                     </div>
-                    <div class="card-div pt-5 pb-5 col-sm-12 col-md-3 col-lg-3"
+                    <div class="card-div pt-5 pb-5 col-sm-12 col-md-6 col-lg-3"
                         style="width: 18rem; margin-top: -50px; background-color: white;">
                         <div class="card-body text-center px-4">
                             <div class="icon-div"><i class="fa-sharp fa-solid fa-virus-covid fa-4x center mb-3"></i>
@@ -85,7 +84,7 @@
                                 safe environment</p>
                         </div>
                     </div>
-                    <div class="card-div pt-5 pb-3 col-sm-12 col-md-3 col-lg-3"
+                    <div class="card-div pt-5 pb-3 col-sm-12 col-md-6 col-lg-3"
                         style="width: 18rem; margin-top: -50px; background-color: white;">
                         <div class="card-body text-center px-4">
                             <div class="icon-div"><i class="fa-solid fa-credit-card fa-4x center mb-3"></i></div>
@@ -96,7 +95,7 @@
                                 rewards on every payment</p>
                         </div>
                     </div>
-                    <div class="card-div pt-5 pb-3 col-sm-12 col-md-3 col-lg-3"
+                    <div class="card-div pt-5 pb-3 col-sm-12 col-md-6 col-lg-3"
                         style="width: 18rem; margin-top: -50px; background-color: white;">
                         <div class="card-body text-center px-4">
                             <div class="icon-div"><i
@@ -116,31 +115,32 @@
         <!-- Recommended Destination -->
         <section style="background-color: #f7fdf9;">
             <p class="h1 fw-bold text-center pt-5 pb-5">Recommended Destination</p>
-            <div class="container mb-5">
-                <div class="row fw-bold fs-5 text-right hr-text">
-                    <div class="col-md-2 m-0 p-0">
+            <div class="container mb-5 mt-5">
+                <div class="d-flex row fw-bold fs-5 mx-auto text-right hr-text dest-text">
+                    <div class="col-lg-3 col-md-6 col-sm-12 m-0 p-0">
                         <p class="ps-5"><span style="color: rgb(3, 3, 83);">Weekend Break</span></p>
                         <hr style="color: rgb(3, 3, 83); background-color: rgb(8, 8, 51); height: 3px;">
                     </div>
-                    <div class="col-md-2 m-0 p-0">
+                    <div class="col-lg-3 col-md-6 col-sm-12 m-0 p-0">
                         <p>The Package Holiday</p>
                         <hr>
                     </div>
-                    <div class="col-md-2 m-0 p-0">
+                    <div class="col-lg-3 col-md-6 col-sm-12 m-0 p-0">
                         <p>The Group Tour</p>
                         <hr>
                     </div>
-                    <div class="col-md-2 m-0 p-0">
+                    <div class="col-lg-3 col-md-6 col-sm-12 m-0 p-0">
                         <p>Long Term Slow Travel</p>
                         <hr>
                     </div>
                 </div>
             </div>
-        </section> -->
+        </section>
+
         <section>
             <div class="container mb-5">
-                <div class="d-flex justify-content-evenly div1">
-                    <div class="dest-div">
+                <div class="d-flex row justify-content-evenly div1">
+                    <div class="dest-div col-lg-4 col-md-6 col-sm-12">
                         <div>
                             <img src="./image/desti1 (4).png" class="rounded dest-img" />
                         </div>
@@ -163,7 +163,7 @@
                         </div>
                     </div>
 
-                    <div class="dest-div">
+                    <div class="dest-div col-lg-4 col-md-6 col-sm-12 ">
                         <div>
                             <img src="./image/desti1 (5).png" class="rounded dest-img" />
                         </div>
@@ -185,7 +185,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="dest-div">
+                    <div class="dest-div col-lg-4 col-md-6 col-sm-12 ">
                         <div>
                             <img src="./image/desti1 (3).png" class="rounded dest-img" />
                         </div>
@@ -207,12 +207,8 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
 
-            <div class="container my-5">
-                <div class="d-flex justify-content-evenly div1">
-                    <div class="dest-div">
+                    <div class="dest-div col-lg-4 col-md-6 col-sm-12">
                         <div>
                             <img src="./image/desti1 (2).png" class="rounded dest-img" />
                         </div>
@@ -236,7 +232,7 @@
                         </div>
                     </div>
 
-                    <div class="dest-div">
+                    <div class="dest-div col-lg-4 col-md-6 col-sm-12">
                         <div>
                             <img src="./image/desti1 (6).png" class="rounded dest-img" />
                         </div>
@@ -258,7 +254,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="dest-div">
+                    <div class="dest-div col-lg-4 col-md-6 col-sm-12">
                         <div>
                             <img src="./image/desti1 (5).png" class="rounded dest-img" />
                         </div>
@@ -285,99 +281,113 @@
         </section>
 
         <!-- blogs -->
-        <p class="h1 fw-bold text-center pt-5 pb-5">Blogs</p>
-        <div class="container mb-5">
-            <div class="row text-center text-white blog-div">
-                <div class="col-md-6 col-sm-12">
-                    <div class="bg-image blog-img" style="background-image: url('./image/blog1.png'); height: 500px;">
-                        <h1 class="head-blog1 fw-bold">The Ultimate Guide
-                            to Climbing
-                            Mount Kilimanjaro</h1>
+        <section>
+            <p class="h1 fw-bold text-center mt-5 mb-5">Blogs</p>
+            <div class="container mb-5">
+                <div class="d-flex row text-center text-white">
+                    <div class="col-lg-6 col-md-6 col-sm-12 blog-left-bg">
+                        <div class="text-center text-white fs-4 mx-auto " style="width: 250px; padding-top: 80px;">
+                            <h1 class="fw-bold">The Ultimate Guide
+                                to Climbing
+                                Mount Kilimanjaro</h1>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-6 col-sm-12">
-                    <div class="bg-image blog-img" style="background-image: url('./image/blog2.png');height: 250px;">
-                        <h4 class="head-blog1 fw-bold">12 Things I’d Tell Any
-                            New Traveler</h4>
-                    </div>
-                    <div class="bg-image blog-img" style="background-image: url('./image/blog3.png');height: 250px;">
-                        <h4 class="head-blog1 fw-bold">The Ultimate Packing List for
-                            Female Travelers
-                        </h4>
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="col-lg-12 col-md-12 col-sm-12 blog-right-bg1">
+                            <div class="text-center text-white fs-4 mx-auto " style="width: 250px; padding-top: 80px;">
+                                <h4 class="fw-bold">12 Things I’d Tell Any
+                                    New Traveler</h4>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 blog-right-bg2">
+                            <div class="text-center text-white fs-4 mx-auto " style="width: 250px; padding-top: 80px;">
+                                <h4 class="fw-bold">The Ultimate Packing List for
+                                    Female Travelers
+                                </h4>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
+        </section>
 
         <!-- happy cutomers -->
-        <div class="container-fluid">
-            <p class="h1 fw-bold text-center pt-5 pb-5 my-5">Happy Customers</p>
-            <div class="style-relative d-flex row mb-5">
-                <div class="style-absolute col-md-8 col-lg-5 col-sm-12">
-                    <div class="d-flex row">
-                        <div class="col-1 p-0 text-end"><i
-                                class="fa-sharp fa-solid fa-quote-left fa-3x icon-abs ms-0"></i>
-                        </div>
-                        <div class="col-11 ps-0 p-0">
-                            <p class="lh-base cust-para">Lorem
-                                ipsum
-                                dolor sit amet, consectetur adipiscing elit,
-                                sed do eiusmod tempor incididunt ut labore et dolore
-                                magna aliqua. Ultricies mi eget mauris pharetra. Amet
-                                risus nullam eget felis eget nunc lobortis. Purus in massa
-                                tempor nec. Porta nibh venenatis cras sed. Viverra ipsum
-                                nunc aliquet bibendum enim. Risus pretium quam
-                                vulputate dignissim suspendisse in. Non quam lacus
-                                suspendisse faucibus interdum posuere lorem ipsum
-                                dolor. Facilisi cras fermentum odio eu feugiat pretium nibh
-                                ipsum. Risus sed vulputate odio ut enim blandit volutpat
-                                maecenas. Netus et malesuada fames ac turpis egestas.
-                                Sed arcu non odio euismod lacinia at quis risus sed. </p>
+        <section>
+            <div class="container-fluid">
+                <p class="h1 fw-bold text-center pt-5 pb-5 my-5">Happy Customers</p>
+                <div class="style-relative d-flex row mb-5">
+                    <div class="style-absolute col-md-8 col-lg-5 col-sm-12">
+                        <div class="d-flex row">
+                            <div class="col-1 p-0 text-end"><i
+                                    class="fa-sharp fa-solid fa-quote-left fa-3x icon-abs ms-0"></i>
+                            </div>
+                            <div class="col-11 ps-0 p-0">
+                                <p class="lh-base cust-para">Lorem
+                                    ipsum
+                                    dolor sit amet, consectetur adipiscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore
+                                    magna aliqua. Ultricies mi eget mauris pharetra. Amet
+                                    risus nullam eget felis eget nunc lobortis. Purus in massa
+                                    tempor nec. Porta nibh venenatis cras sed. Viverra ipsum
+                                    nunc aliquet bibendum enim. Risus pretium quam
+                                    vulputate dignissim suspendisse in. Non quam lacus
+                                    suspendisse faucibus interdum posuere lorem ipsum
+                                    dolor. Facilisi cras fermentum odio eu feugiat pretium nibh
+                                    ipsum. Risus sed vulputate odio ut enim blandit volutpat
+                                    maecenas. Netus et malesuada fames ac turpis egestas.
+                                    Sed arcu non odio euismod lacinia at quis risus sed. </p>
 
-                            <div class="d-flex row cust-img-div">
-                                <div class="col-3">
-                                    <img src="./image/review.png" class="cust-img" alt=".." />
+                                <div class="d-flex row cust-img-div">
+                                    <div class="col-3">
+                                        <img src="./image/review.png" class="cust-img" alt=".." />
 
-                                </div>
-                                <div class="col-9 lh-1">
-                                    <p>Shalini Singh</p>
-                                    <p><span style="color: rgb(55, 132, 135);">Project Manger flyhigh</span></p>
+                                    </div>
+                                    <div class="col-9 lh-1">
+                                        <p>Shalini Singh</p>
+                                        <p><span style="color: rgb(55, 132, 135);">Project Manger flyhigh</span></p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-
+        </section>
     </main>
 
-    <footer>
-        <div class="container">
-            <div class="d-flex footer-row p-5 mb-5">
-                <div class="col-md-4 col-sm-12 col-12 pt-3 footer-text">
+   <footer>
+        <div class="container footer-div">
+            <div class="d-flex row footer-row p-5 mb-5">
+                <div class="col-lg-5 col-md-5 col-sm-12 pt-3 footer-text">
                     <p class="fw-semibold" style="color: black;">Copyright © 2020 Travelo. All rights
                         reserved</p>
                 </div>
-                <div class="col-md-4 col-sm-12 col-12 footer-link">
-                    <nav class="navbar navbar-expand-sm navbar-light">
-                        <ul class="navbar-nav d-flex flex-row">
-                            <li class="nav-item active">
-                                <a href="#" class="nav-link active fw-semibold footer-nav"
-                                    style="color: black; font-size: 18px;">Home</a>
+                <div class="col-lg-3 col-md-3 col-sm-12 pt-3">
+                    <div class="d-flex flex-row">
+                        <div class="col-4 text-center ">
+                            <li style="list-style-type: none;">
+                                <a href="home.html" class="nav-link active fw-semibold
+                                "
+                                    style="color: black; font-size: 18px ;list-style-type: none;">Home</a>
                             </li>
-                            <li class="nav-item active">
-                                <a href="#" class="nav-link text-dark footer-nav" style="font-size: 18px;">About</a>
+                        </div>
+                        <div class="col-4 text-center ">
+                            <li style="list-style-type: none;">
+                                <a href="about.html" class="nav-link" style="font-size: 18px;">About</a>
                             </li>
-                            <li class="nav-item active">
-                                <a href="#" class="nav-link text-dark footer-nav" style="font-size: 18px;">Contact</a>
+                        </div>
+                        <div class="col-4 text-center ">
+                            <li style="list-style-type: none;">
+                                <a href="contact.html" class="nav-link" style="font-size: 18px;">Contact</a>
                             </li>
-                        </ul>
-                    </nav>
+                        </div>
+
+                    </div>
+
 
                 </div>
-                <div class="col-md-4 col-sm-12 col-12 pt-2 footer-icon">
+                <div class="col-lg-4 col-md-4 col-sm-12 pt-2 footer-icon text-end">
                     <i class="fa-brands fa-facebook-f fa-1x bg-dark icon-footer"></i>
                     <i class="fa-brands fa-linkedin-in fa-1x bg-dark icon-footer"></i>
                     <i class="fa-brands fa-instagram fa-1x fa-1x bg-dark icon-footer"></i>
