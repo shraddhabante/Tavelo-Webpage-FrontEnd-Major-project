@@ -7,18 +7,24 @@ body {
     margin: 0;
 }
 
-
-.about-head {
-    padding-top: 170px;
-}
-
 .about-bg-img {
     background-image: url('../image/welcome_to_the_beach-wallpaper-2560x1440.jpg');
-    background-size: cover;
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     height: 400px;
-
+    position: relative;
+    border-radius: 10px;
 }
 
+.about-bg-black{
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    padding-top: 170px;
+}
 .about-bg-rel {
     position: relative;
     background-image: url('../image/about-bg-1.png');
@@ -128,18 +134,11 @@ a {
     text-align: end;
 }
 
-@media screen and (max-width:400px) {
+/* @media screen and (max-width:400px) {
     .about-bg-img {
         height: auto;
     }
 
-    .about-head {
-        padding-top: 50px;
-    }
-
-    .about-text {
-        padding-bottom: 20px;
-    }
 
     .about-bg-rel {
         width: 50%;
@@ -232,4 +231,4 @@ a {
         text-align: center;
         order: 2;
     }
-}
+} */

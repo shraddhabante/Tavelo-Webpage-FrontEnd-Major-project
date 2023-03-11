@@ -18,8 +18,8 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm bg-light about-nav">
-            <div class="container">
+        <nav class="navbar navbar-expand-sm bg-light about-nav container">
+            <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <img src="./image/travelo-logo.jpg" style="width: 50px;" class="rounded-pill"><span
                         style="color: dodgerblue;" class="fw-bold">Travelo</span></a>
@@ -27,14 +27,15 @@
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                    <ul class="navbar-nav">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto me-auto">
                         <li class="nav-item">
                             <a class="nav-link active ps-5 fs-5" style="color: cadetblue;" aria-current="page"
                                 href="./home.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fs-5 ps-5 fw-bold" style="color: cadetblue;" href="./about.html">About</a>
+                            <a class="nav-link fs-5 ps-5 fw-bold" style="color: cadetblue;"
+                                href="./about.html">About</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link fs-5 ps-5" style="color: cadetblue;" href="./contact.html">Contact</a>
@@ -46,18 +47,20 @@
     </header>
     <main>
         <section>
-            <div class="container mb-5 text-center text-white">
-                <div class="rounded about-bg-img">
-                    <p class="h1 fw-bold about-head">ABOUT</p>
-                    <p class="h4 about-text">Home | About</p>
+            <div class="container about-bg-img">
+                <div class="about-bg-black">
+                    <div class="text-center text-white mx-auto fs-5">
+                        <h1 class="fw-bold">ABOUT</h1>
+                        <p class="h5">Home | About</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section>
+       <section class="mt-5">
             <div class="container-fluid">
                 <div class="row my-5">
-                    <div class="col-12 col-sm-12 col-md-6">
+                    <div class="col-lg-6 col-md-12 col-sm-12">
                         <div class="about-bg-rel">
                             <div class="about-img1">
                                 <img src="./image/about-image-1.jpg" class="img-thumbnail" alt="..." />
@@ -67,7 +70,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-12 col-md-6 pt-5 about-para" style="color: #063c35;">
+                    <div class="col-lg-6 col-md-12 col-sm-12 pt-5 about-para" style="color: #063c35;">
                         <p class="h1 fw-bolder lh-3">LETS GO TRAVEL
                             <br>WITH US
                         </p>
@@ -90,7 +93,7 @@
             </div>
         </section>
 
-        <section>
+        <!-- <section>
             <div class="about-bg-img2">
                 <p class="h1 fw-bold ps-5 pt-4 mb-5" style="color: #063c35;">MEET OUR TEAM</p>
                 <div class="row justify-content-evenly team-row" style="height: auto;">
@@ -127,9 +130,9 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
-        <section style="color: #063c35;">
+        <!-- <section style="color: #063c35;">
             <div class="container">
                 <p class="h1 fw-bold ps-5 pt-5 mt-5 mb-5">A FEW SIMPLE STEPS FOR DREAM VACATION</p>
             </div>
@@ -191,10 +194,10 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
     </main>
 
-    <footer>
+    <!-- <footer>
         <div class="container">
             <div class="d-flex footer-row p-5 mb-5">
                 <div class="col-md-4 col-sm-12 col-12 pt-3 footer-text">
@@ -224,7 +227,7 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> -->
 
 </body>
 
